@@ -1,0 +1,123 @@
+[
+  {
+    "id": "soda",
+    "name": "Soda",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/soda.png",
+    "explanation": "Soda is a once-in-a-while drink because it is very sweet and does not give the body many helpful nutrients."
+  },
+  {
+    "id": "cookie",
+    "name": "Cookie",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/cookie.png",
+    "explanation": "Cookies are a once-in-a-while food because they are sweet treats that usually have lots of added sugar."
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/apple.png",
+    "explanation": "Apples are an everyday food because they give your body fiber, water, and natural sweetness."
+  },
+  {
+    "id": "salad",
+    "name": "Salad",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/salad.png",
+    "explanation": "Salads are an everyday food because they give your body vitamins, minerals, and water."
+  },
+  {
+    "id": "burger",
+    "name": "Cheeseburger",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/burger.png",
+    "explanation": "Cheeseburgers are a sometimes food because they can have more calories, fat, and sodium than everyday foods."
+  },
+  {
+    "id": "carrots",
+    "name": "Carrots",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/carrots.png",
+    "explanation": "Carrots are an everyday food with crunch, color, and vitamin A to help your body grow strong."
+  },
+  {
+    "id": "oatmeal",
+    "name": "Oatmeal",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/oatmeal.png",
+    "explanation": "Oatmeal is an everyday food because it has whole grains that can help keep energy steady."
+  },
+  {
+    "id": "grilled-chicken",
+    "name": "Grilled Chicken",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/grilled-chicken.png",
+    "explanation": "Grilled chicken is an everyday food because it has protein that helps build and repair muscles."
+  },
+  {
+    "id": "cheese-pizza",
+    "name": "Cheese Pizza",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/cheese-pizza.png",
+    "explanation": "Cheese pizza can be a sometimes food because it has helpful ingredients, and it can also have more salt and fat."
+  },
+  {
+    "id": "pancakes",
+    "name": "Pancakes",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/pancakes.png",
+    "explanation": "Pancakes are a sometimes food, especially with syrup, because they can give quick energy but may not keep you full as long."
+  },
+  {
+    "id": "granola-bar",
+    "name": "Granola Bar",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/granola-bar.png",
+    "explanation": "Granola bars can be a sometimes food because some have oats and nuts, while others have lots of added sugar."
+  },
+  {
+    "id": "fruit-juice",
+    "name": "Fruit Juice",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/fruit-juice.png",
+    "explanation": "Fruit juice can be a sometimes drink because it has fruit flavor, but whole fruit usually has more fiber."
+  },
+  {
+    "id": "cupcake",
+    "name": "Cupcake",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/cupcake.png",
+    "explanation": "Cupcakes are a once-in-a-while food because they are sweet treats that usually have lots of added sugar."
+  },
+
+  {
+    "id": "fries",
+    "name": "Fries",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/fries.png",
+    "explanation": "Fries are a once-in-a-while food because they can have more oil and salt than everyday foods."
+  },
+  {
+    "id": "candy",
+    "name": "Candy",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/candy.png",
+    "explanation": "Candy is a once-in-a-while food because it is mostly sugar and is best enjoyed as a small treat."
+  }
+]
