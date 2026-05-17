@@ -77,7 +77,7 @@ function showFood() {
   const currentFood = foods[currentFoodIndex];
   hasAnsweredCurrentFood = false;
 
-  feedbackElement.classList.add("hidden");
+  closeFeedbackModal();
   finalScreenElement.classList.add("hidden");
   answerGridElement.classList.remove("hidden");
   helperTextElement.classList.remove("hidden");
@@ -125,8 +125,21 @@ function handleAnswerClick(event) {
 
   feedbackExplanationElement.textContent = currentFood.explanation;
   helperTextElement.textContent = "Read the clue, then move to the next food.";
-  feedbackElement.classList.remove("hidden");
+  openFeedbackModal();
   updateScoreBoard();
+}
+
+function openFeedbackModal() {
+  feedbackElement.classList.remove("hidden");
+  document.body.classList.add("feedback-open");
+
+  // Move keyboard focus into the modal so keyboard and screen reader users land on the next action.
+  nextButton.focus();
+}
+
+function closeFeedbackModal() {
+  feedbackElement.classList.add("hidden");
+  document.body.classList.remove("feedback-open");
 }
 
 function getStreakCelebration(currentStreak) {
@@ -154,6 +167,7 @@ function launchConfetti() {
 }
 
 function goToNextFood() {
+  closeFeedbackModal();
   currentFoodIndex += 1;
 
   if (currentFoodIndex >= foods.length) {
@@ -166,7 +180,7 @@ function goToNextFood() {
 
 function showFinalScore() {
   answerGridElement.classList.add("hidden");
-  feedbackElement.classList.add("hidden");
+  closeFeedbackModal();
   helperTextElement.classList.add("hidden");
   finalScreenElement.classList.remove("hidden");
 
@@ -212,5 +226,11 @@ foodImageElement.addEventListener("error", () => {
 answerGridElement.addEventListener("click", handleAnswerClick);
 nextButton.addEventListener("click", goToNextFood);
 playAgainButton.addEventListener("click", playAgain);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !feedbackElement.classList.contains("hidden")) {
+    goToNextFood();
+  }
+});
 
 loadFoods();

@@ -18,7 +18,21 @@ The game shows one food at a time. Players choose whether it is a **Whoa**, **Sl
    npm run dev
    ```
 
-3. Open the app:
+3. Or start it with PM2, which watches for changes and restarts Express automatically:
+
+   ```bash
+   npm run pm2:start
+   ```
+
+   Useful PM2 commands:
+
+   ```bash
+   npm run pm2:logs
+   npm run pm2:restart
+   npm run pm2:stop
+   ```
+
+4. Open the app:
 
    ```text
    http://localhost:3000
