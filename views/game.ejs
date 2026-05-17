@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= pageTitle %></title>
     <link rel="stylesheet" href="/css/game.css" />
-    <script defer src="/vendor/canvas-confetti/confetti.browser.min.js"></script>
+    <script
+      defer
+      src="/vendor/canvas-confetti/confetti.browser.min.js"
+    ></script>
     <script defer src="/js/game.js"></script>
   </head>
   <body>
     <main class="game-shell">
       <header class="game-header" aria-label="Game progress">
         <div class="brand-block">
-          <p class="eyebrow">Food Sorting Game</p>
+          <p class="eyebrow">MAX PRESENTS:</p>
           <h1>Whoa Slow Go</h1>
         </div>
 
@@ -40,7 +43,9 @@
           <figcaption id="food-name">Food name</figcaption>
         </figure>
 
-        <p class="helper-text" id="helper-text">Think carefully, then choose!</p>
+        <p class="helper-text" id="helper-text">
+          Think carefully, then choose!
+        </p>
 
         <div class="answer-grid" id="answer-grid" aria-label="Answer choices">
           <button class="answer-button whoa" type="button" data-category="whoa">
@@ -57,20 +62,37 @@
           </button>
         </div>
 
-        <section class="feedback hidden" id="feedback" aria-live="assertive">
-          <h3 id="feedback-title"></h3>
-          <p id="feedback-explanation"></p>
-          <p class="celebration" id="celebration"></p>
-          <button class="next-button" id="next-button" type="button">Next Food</button>
-        </section>
-
-        <section class="final-screen hidden" id="final-screen" aria-live="polite">
+        <section
+          class="final-screen hidden"
+          id="final-screen"
+          aria-live="polite"
+        >
           <h2>Nice sorting!</h2>
           <p id="final-score"></p>
           <p id="best-score-note"></p>
-          <button class="next-button" id="play-again-button" type="button">Play Again</button>
+          <button class="next-button" id="play-again-button" type="button">
+            Play Again
+          </button>
         </section>
       </section>
     </main>
+
+    <section
+      class="feedback hidden"
+      id="feedback"
+      role="dialog"
+      aria-modal="true"
+      aria-live="assertive"
+      aria-labelledby="feedback-title"
+    >
+      <div class="feedback-dialog">
+        <h3 id="feedback-title"></h3>
+        <p id="feedback-explanation"></p>
+        <p class="celebration" id="celebration"></p>
+        <button class="next-button" id="next-button" type="button">
+          Next Food
+        </button>
+      </div>
+    </section>
   </body>
 </html>

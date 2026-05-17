@@ -119,5 +119,125 @@
     "categoryLabel": "Whoa",
     "image": "/images/foods/candy.png",
     "explanation": "Candy is a once-in-a-while food because it is mostly sugar and is best enjoyed as a small treat."
+  },
+  {
+    "id": "artichoke",
+    "name": "Artichoke",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/artichoke.png",
+    "explanation": "Artichokes are an everyday food because they give your body fiber, vitamins, and minerals."
+  },
+  {
+    "id": "baked-fish",
+    "name": "Baked Fish",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/baked-fish.png",
+    "explanation": "Baked fish is an everyday food because it has protein and healthy fats that help your body and brain."
+  },
+  {
+    "id": "cauliflower",
+    "name": "Cauliflower",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/cauliflower.png",
+    "explanation": "Cauliflower is an everyday food because it gives your body fiber, water, and helpful nutrients."
+  },
+  {
+    "id": "cheese-quesadilla",
+    "name": "Cheese Quesadilla",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/cheese-quesadilla.png",
+    "explanation": "A cheese quesadilla can be a sometimes food because it has protein and calcium, and it can also have more refined grains and fat."
+  },
+  {
+    "id": "chex-mix",
+    "name": "Chex Mix",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/chex-mix.png",
+    "explanation": "Chex Mix can be a sometimes snack because it has crunchy grains, and it can also have more salt than everyday foods."
+  },
+  {
+    "id": "chicken-nuggets",
+    "name": "Chicken Nuggets",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/chicken-nuggets.png",
+    "explanation": "Chicken nuggets are a once-in-a-while food because they are often breaded and fried, which can add more oil and salt."
+  },
+  {
+    "id": "dots-pretzel-sticks",
+    "name": "Dot's Pretzel Sticks",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/dots-pretzel-sticks.png",
+    "explanation": "Pretzel sticks can be a sometimes snack because they are crunchy and fun, and they can also have more salt than everyday foods."
+  },
+  {
+    "id": "honey-bunches",
+    "name": "Honey Bunches of Oats",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/honey-bunches.png",
+    "explanation": "Honey Bunches of Oats can be a sometimes food because it has grains, and it can also have added sugar."
+  },
+  {
+    "id": "macaroni-and-cheese",
+    "name": "Macaroni and Cheese",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/macaroni-and-cheese.png",
+    "explanation": "Macaroni and cheese can be a sometimes food because it has dairy and energy, and it can also have more salt and fat."
+  },
+  {
+    "id": "microwave-popcorn",
+    "name": "Microwave Popcorn",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/microwave-popcorn.png",
+    "explanation": "Microwave popcorn can be a sometimes snack because popcorn is a grain, and some kinds add extra butter, oil, or salt."
+  },
+  {
+    "id": "plain-noodles",
+    "name": "Plain Noodles",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/plain-noodles.png",
+    "explanation": "Plain noodles can be a sometimes food because they give quick energy, but they may not have as much fiber or protein by themselves."
+  },
+  {
+    "id": "sushi",
+    "name": "Sushi",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/sushi.png",
+    "explanation": "Sushi can be a sometimes food because it often has fish and vegetables, and it can also include white rice and salty sauces."
+  },
+  {
+    "id": "sweet-peppers",
+    "name": "Sweet Peppers",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/sweet-peppers.png",
+    "explanation": "Sweet peppers are an everyday food because they are colorful, crunchy, and full of vitamins."
+  },
+  {
+    "id": "turkey-sandwich",
+    "name": "Turkey Sandwich",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/turkey-sandwich.png",
+    "explanation": "A turkey sandwich can be an everyday food because it has protein and can be balanced with bread, vegetables, and fruit on the side."
+  },
+  {
+    "id": "uncrustables",
+    "name": "Uncrustables",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/uncrustables.png",
+    "explanation": "Uncrustables can be a sometimes food because they have peanut butter for energy, and they can also have added sugar."
   }
 ]
