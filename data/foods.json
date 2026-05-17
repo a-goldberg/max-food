@@ -239,5 +239,21 @@
     "categoryLabel": "Slow",
     "image": "/images/foods/uncrustables.png",
     "explanation": "Uncrustables can be a sometimes food because they have peanut butter for energy, and they can also have added sugar."
+  },
+  {
+    "id": "fruit-smoothie",
+    "name": "Fruit Smoothie",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/fruit smoothie.png",
+    "explanation": "A fruit smoothie can be a sometimes drink because it has fruit, and it can also be easier to drink quickly than whole fruit."
+  },
+  {
+    "id": "greek-yogurt-fruit",
+    "name": "Greek Yogurt with Fruit",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/greek-yogury-fruit.png",
+    "explanation": "Greek yogurt with fruit can be an everyday food because it has protein, calcium, and fruit for natural sweetness."
   }
 ]
