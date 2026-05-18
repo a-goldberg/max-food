@@ -255,5 +255,125 @@
     "categoryLabel": "Go",
     "image": "/images/foods/greek-yogury-fruit.png",
     "explanation": "Greek yogurt with fruit can be an everyday food because it has protein, calcium, and fruit for natural sweetness."
+  },
+  {
+    "id": "bean-cheese-taco",
+    "name": "Bean and Cheese Taco",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/bean-cheese-taco.png",
+    "explanation": "A bean and cheese taco can be a sometimes food because it has protein and fiber, but it usually has more salt or fat to make it delicious."
+  },
+  {
+    "id": "barbecue-plate",
+    "name": "Barbecue Plate",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/delicious-barbecue-plate.png",
+    "explanation": "No. Just no. None of this is good for you. 'Protein and fiber,' you may say.  'Vitamins and minerals.'  Perhaps.  But this plate is also full of salt, fat, and calories that can be too much for your body to handle on a regular basis."
+  },
+  {
+    "id": "fresh-berries",
+    "name": "Fresh Berries",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/fresh-berries.png",
+    "explanation": "Fresh berries are an everyday food because they give your body fiber, color, and natural sweetness.  Consume with abandon."
+  },
+  {
+    "id": "fresh-cucumbers",
+    "name": "Fresh Cucumbers",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/fresh-cucumbers.png",
+    "explanation": "Fresh cucumbers are an everyday food that's full of water and crunchy goodness."
+  },
+  {
+    "id": "gatorade",
+    "name": "Gatorade",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/gatorade.png",
+    "explanation": "It's got electrolytes. It's what plants crave. But the ample sugar content of most sports drinks make it a once-in-a-while treat."
+  },
+  {
+    "id": "grilled-cheese",
+    "name": "Grilled Cheese",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/grilled-cheese.png",
+    "explanation": "Grilled cheese can be a sometimes food because it has calcium and energy, and it can also have more refined grains, salt, and fat."
+  },
+  {
+    "id": "hot-dog",
+    "name": "Hot Dog",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/hot-dog.png",
+    "explanation": "Hot dogs are a once-in-a-while food because processed meats can have more salt and fat than everyday proteins."
+  },
+  {
+    "id": "ice-cream-sandwich",
+    "name": "Ice Cream Sandwich",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/ice-cream-sandwich.png",
+    "explanation": "Ice cream sandwiches are a once-in-a-while food because they are sweet frozen treats with added sugar."
+  },
+  {
+    "id": "instant-ramen",
+    "name": "Instant Ramen",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/instant-ramen.png",
+    "explanation": "Instant ramen is a once-in-a-while food because it can have a lot of salt and may not include many vegetables or protein by itself."
+  },
+  {
+    "id": "mozzarella-sticks",
+    "name": "Mozzarella Sticks",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/mozzarella-sticks.png",
+    "explanation": "Mozzarella sticks are a once-in-a-while food because they are usually breaded and fried, which can add more oil and salt."
+  },
+  {
+    "id": "pickles",
+    "name": "Pickles",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/pickles.png",
+    "explanation": "Pickles can be a sometimes food because they start as cucumbers, and they can also have more salt than you need."
+  },
+  {
+    "id": "roast-chicken",
+    "name": "Roast Chicken",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/roast-chicken.png",
+    "explanation": "Roast chicken can be an everyday food because it gives your body protein that helps build and repair muscles."
+  },
+  {
+    "id": "veggie-straws",
+    "name": "Veggie Straws",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/veggie-straws.png",
+    "explanation": "Veggie Straws can be a sometimes snack because they are crunchy and fun, but they are more like chips than whole vegetables."
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/water.png",
+    "explanation": "Ha, it's water.  Drink as much as you want."
+  },
+  {
+    "id": "white-rice",
+    "name": "White Rice",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/white-rice.png",
+    "explanation": "White rice can be a sometimes food because it gives quick energy, but it should be balanced with protein and vegetables."
   }
 ]
