@@ -33,6 +33,18 @@ button {
   font: inherit;
 }
 
+.app-version {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 10;
+  margin: 0;
+  color: #000000;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
 .game-shell {
   width: min(1120px, 100%);
   margin: 0 auto;
@@ -286,6 +298,7 @@ h1 {
   .game-header {
     align-items: flex-start;
     flex-direction: column;
+    gap: 12px;
   }
 
   .score-board {
@@ -294,10 +307,48 @@ h1 {
   }
 
   .answer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 16px;
   }
 
   .answer-button {
-    min-height: 118px;
+    display: grid;
+    place-items: center;
+    min-height: auto;
+    aspect-ratio: 1 / 1;
+    padding: 6px 2px;
+    border-width: 3px;
+    border-radius: 12px;
+    box-shadow: 0 5px 0 rgba(58, 48, 34, 0.15);
+  }
+
+  .answer-button span {
+    font-size: clamp(1.45rem, 8vw, 2.3rem);
+  }
+
+  .answer-button small {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .game-shell {
+    padding-inline: 10px;
+  }
+
+  .score-board {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .score-pill {
+    flex: 1 1 0;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
+    min-height: 38px;
+    padding: 7px 5px;
+    font-size: 0.82rem;
   }
 }
