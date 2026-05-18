@@ -3,12 +3,13 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Keep important folders in named variables so the paths are easy to follow.
 const publicFolder = path.join(__dirname, "public");
 const viewsFolder = path.join(__dirname, "views");
 const foodsFile = path.join(__dirname, "data", "foods.json");
+const publicEnvFile = path.join(__dirname, ".env-public");
 
 app.set("view engine", "ejs");
 app.set("views", viewsFolder);
@@ -20,12 +21,15 @@ app.use(express.static(publicFolder));
 // This keeps the project npm-based without adding a bundler.
 app.use(
   "/vendor/canvas-confetti",
-  express.static(path.join(__dirname, "node_modules", "canvas-confetti", "dist"))
+  express.static(
+    path.join(__dirname, "node_modules", "canvas-confetti", "dist"),
+  ),
 );
 
 app.get("/", (request, response) => {
   response.render("game", {
-    pageTitle: "Whoa Slow Go"
+    pageTitle: "Whoa Slow Go",
+    versionNumber: getPublicEnvValue("version", "0.0.0"),
   });
 });
 
@@ -45,6 +49,44 @@ app.get("/api/foods", (request, response, next) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "127.0.0.1", () => {
   console.log(`Whoa Slow Go is running at http://localhost:${PORT}`);
 });
+
+function getPublicEnvValue(key, fallbackValue) {
+  try {
+    const fileContents = fs.readFileSync(publicEnvFile, "utf8");
+    const publicValues = parsePublicEnv(fileContents);
+
+    return publicValues[key] || fallbackValue;
+  } catch (error) {
+    return fallbackValue;
+  }
+}
+
+function parsePublicEnv(fileContents) {
+  const values = {};
+
+  // This intentionally supports only simple key=value lines so the public
+  // config stays easy to read and safe to check into version control.
+  fileContents.split(/\r?\n/).forEach((line) => {
+    const trimmedLine = line.trim();
+
+    if (!trimmedLine || trimmedLine.startsWith("#")) {
+      return;
+    }
+
+    const equalsIndex = trimmedLine.indexOf("=");
+
+    if (equalsIndex === -1) {
+      return;
+    }
+
+    const key = trimmedLine.slice(0, equalsIndex).trim();
+    const value = trimmedLine.slice(equalsIndex + 1).trim();
+
+    values[key] = value;
+  });
+
+  return values;
+}

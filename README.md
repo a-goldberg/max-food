@@ -35,11 +35,12 @@ The game shows one food at a time. Players choose whether it is a **Whoa**, **Sl
 4. Open the app:
 
    ```text
-   http://localhost:3000
+   http://localhost:3001
    ```
 
 ## Project files
 
+- `.env-public` contains checked-in public release values like the visible app version.
 - `server.js` starts the Express server and serves the food data.
 - `views/game.ejs` is the main page template.
 - `public/css/game.css` contains the responsive game styling.

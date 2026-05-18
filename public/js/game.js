@@ -3,7 +3,7 @@
 
 const scoreElement = document.querySelector("#score");
 const streakElement = document.querySelector("#streak");
-const bestScoreElement = document.querySelector("#best-score");
+const bestStreakElement = document.querySelector("#best-score");
 const roundCountElement = document.querySelector("#round-count");
 const questionElement = document.querySelector("#question");
 const foodImageElement = document.querySelector("#food-image");
@@ -18,20 +18,21 @@ const celebrationElement = document.querySelector("#celebration");
 const nextButton = document.querySelector("#next-button");
 const finalScreenElement = document.querySelector("#final-screen");
 const finalScoreElement = document.querySelector("#final-score");
-const bestScoreNoteElement = document.querySelector("#best-score-note");
+const bestStreakNoteElement = document.querySelector("#best-score-note");
 const playAgainButton = document.querySelector("#play-again-button");
 
 const POINTS_FOR_CORRECT_ANSWER = 10;
-const BEST_SCORE_KEY = "whoaSlowGoBestScore";
+const BEST_STREAK_KEY = "whoaSlowGoBestStreak";
 
 let foods = [];
 let currentFoodIndex = 0;
 let score = 0;
 let streak = 0;
-let bestScore = Number(localStorage.getItem(BEST_SCORE_KEY)) || 0;
+let bestStreak = Number(localStorage.getItem(BEST_STREAK_KEY)) || 0;
 let hasAnsweredCurrentFood = false;
+let hasHandledBestForCurrentStreak = false;
 
-bestScoreElement.textContent = bestScore;
+bestStreakElement.textContent = bestStreak;
 
 async function loadFoods() {
   try {
@@ -55,6 +56,7 @@ function startGame() {
   currentFoodIndex = 0;
   score = 0;
   streak = 0;
+  hasHandledBestForCurrentStreak = false;
   updateScoreBoard();
   showFood();
 }
@@ -114,11 +116,16 @@ function handleAnswerClick(event) {
   if (isCorrect) {
     score += POINTS_FOR_CORRECT_ANSWER;
     streak += 1;
+    const reachedNewBestStreak = saveBestStreakIfNeeded();
     feedbackTitleElement.textContent = "Correct!";
-    celebrationElement.textContent = getStreakCelebration(streak);
+    celebrationElement.textContent = getStreakCelebration(
+      streak,
+      reachedNewBestStreak
+    );
     launchConfetti();
   } else {
     streak = 0;
+    hasHandledBestForCurrentStreak = false;
     feedbackTitleElement.textContent = `Good try! This one is ${currentFood.categoryLabel}.`;
     celebrationElement.textContent = "";
   }
@@ -142,7 +149,11 @@ function closeFeedbackModal() {
   document.body.classList.remove("feedback-open");
 }
 
-function getStreakCelebration(currentStreak) {
+function getStreakCelebration(currentStreak, reachedNewBestStreak) {
+  if (reachedNewBestStreak) {
+    return `New best streak: ${currentStreak} in a row!`;
+  }
+
   if (currentStreak > 0 && currentStreak % 5 === 0) {
     return `${currentStreak} in a row! You are on a big thinking streak.`;
   }
@@ -191,12 +202,10 @@ function showFinalScore() {
   foodNameElement.textContent = "Final Score";
   finalScoreElement.textContent = `You scored ${score} out of ${foods.length * POINTS_FOR_CORRECT_ANSWER} points.`;
 
-  if (score > bestScore) {
-    bestScore = score;
-    localStorage.setItem(BEST_SCORE_KEY, String(bestScore));
-    bestScoreNoteElement.textContent = "New best score!";
+  if (bestStreak > 0) {
+    bestStreakNoteElement.textContent = `Best streak: ${bestStreak} in a row`;
   } else {
-    bestScoreNoteElement.textContent = `Best score: ${bestScore}`;
+    bestStreakNoteElement.textContent = "Best streak: 0";
   }
 
   updateScoreBoard();
@@ -210,7 +219,24 @@ function playAgain() {
 function updateScoreBoard() {
   scoreElement.textContent = score;
   streakElement.textContent = streak;
-  bestScoreElement.textContent = bestScore;
+  bestStreakElement.textContent = bestStreak;
+}
+
+function saveBestStreakIfNeeded() {
+  if (streak <= bestStreak) {
+    return false;
+  }
+
+  const previousBestStreak = bestStreak;
+  bestStreak = streak;
+  localStorage.setItem(BEST_STREAK_KEY, String(bestStreak));
+
+  if (hasHandledBestForCurrentStreak) {
+    return false;
+  }
+
+  hasHandledBestForCurrentStreak = true;
+  return previousBestStreak > 0;
 }
 
 function makePlaceholderImage(label) {
