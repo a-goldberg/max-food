@@ -375,5 +375,29 @@
     "categoryLabel": "Slow",
     "image": "/images/foods/white-rice.png",
     "explanation": "White rice can be a sometimes food because it gives quick energy, but it should be balanced with protein and vegetables."
+  },
+  {
+    "id": "liger-meat",
+    "name": "Roast Liger Meat",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/roast-liger-meat.png",
+    "explanation": "Enjoy liger meat in moderation, because it gives your body protein that helps build and repair muscles, but...it's from a liger."
+  },
+  {
+    "id": "grilled-steak",
+    "name": "Grilled Steak",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/grilled-steak.png",
+    "explanation": "A good steak has protein and iron, but it can also have more saturated fat than other protein sources."
+  },
+  {
+    "id": "bagel",
+    "name": "Bagel with Cream Cheese",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/bagel-cream-cheese.png",
+    "explanation": "A lot depends on how it's prepared, but you can enjoy a bagel with cream cheese as a sometimes food."
   }
 ]
