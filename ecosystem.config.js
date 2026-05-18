@@ -6,7 +6,7 @@ module.exports = {
       watch: ["server.js", "views", "public", "data"],
       ignore_watch: ["node_modules", ".git"],
       env: {
-        NODE_ENV: "development",
+        NODE_ENV: "production",
         PORT: 3001,
       },
     },
