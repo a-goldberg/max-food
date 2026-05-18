@@ -13,7 +13,9 @@ const answerGridElement = document.querySelector("#answer-grid");
 const answerButtons = document.querySelectorAll(".answer-button");
 const feedbackElement = document.querySelector("#feedback");
 const feedbackTitleElement = document.querySelector("#feedback-title");
-const feedbackExplanationElement = document.querySelector("#feedback-explanation");
+const feedbackExplanationElement = document.querySelector(
+  "#feedback-explanation",
+);
 const celebrationElement = document.querySelector("#celebration");
 const nextButton = document.querySelector("#next-button");
 const finalScreenElement = document.querySelector("#final-screen");
@@ -120,7 +122,7 @@ function handleAnswerClick(event) {
     feedbackTitleElement.textContent = "Correct!";
     celebrationElement.textContent = getStreakCelebration(
       streak,
-      reachedNewBestStreak
+      reachedNewBestStreak,
     );
     launchConfetti();
   } else {
@@ -154,8 +156,12 @@ function getStreakCelebration(currentStreak, reachedNewBestStreak) {
     return `New best streak: ${currentStreak} in a row!`;
   }
 
+  if (currentStreak > 0 && currentStreak % 10 === 0) {
+    return `${currentStreak} in a row! Look at the big brain on this one.`;
+  }
+
   if (currentStreak > 0 && currentStreak % 5 === 0) {
-    return `${currentStreak} in a row! You are on a big thinking streak.`;
+    return `${currentStreak} in a row! You are on a thinking streak.`;
   }
 
   if (currentStreak > 0 && currentStreak % 3 === 0) {
@@ -173,7 +179,7 @@ function launchConfetti() {
   confetti({
     particleCount: 90,
     spread: 70,
-    origin: { y: 0.7 }
+    origin: { y: 0.7 },
   });
 }
 
