@@ -27,8 +27,13 @@ app.use(
 );
 
 app.get("/", (request, response) => {
+  const requestOrigin = getRequestOrigin(request);
+
   response.render("game", {
     pageTitle: "Whoa Slow Go",
+    pageDescription: "A playful food categorization game for learning Whoa, Slow, and Go foods.",
+    shareImageUrl: `${requestOrigin}/images/share/barbecue-plate-share.jpg`,
+    pageUrl: requestOrigin,
     versionNumber: getPublicEnvValue("version", "0.0.0"),
   });
 });
@@ -62,6 +67,13 @@ function getPublicEnvValue(key, fallbackValue) {
   } catch (error) {
     return fallbackValue;
   }
+}
+
+function getRequestOrigin(request) {
+  const forwardedProtocol = request.get("x-forwarded-proto");
+  const protocol = forwardedProtocol || request.protocol;
+
+  return `${protocol}://${request.get("host")}`;
 }
 
 function parsePublicEnv(fileContents) {
