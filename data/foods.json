@@ -21,7 +21,7 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/apple.png",
-    "explanation": "Apples are an everyday food because they give your body fiber, water, and natural sweetness."
+    "explanation": "Fresh fruits like apples are an everyday food because they give your body fiber, water, and natural sweetness."
   },
   {
     "id": "salad",
@@ -37,7 +37,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/burger.png",
-    "explanation": "Cheeseburgers are a sometimes food because they can have more calories, fat, and sodium than everyday foods."
+    "explanation": "Cheeseburgers are a sometimes food because they have more calories, fat, and sodium than everyday foods."
   },
   {
     "id": "carrots",
@@ -53,7 +53,7 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/oatmeal.png",
-    "explanation": "Oatmeal is an everyday food because it has whole grains that can help keep energy steady."
+    "explanation": "Oatmeal is an everyday food because it has whole grains that can help keep energy steady. Unless you pack it full of butter and sugar, of course."
   },
   {
     "id": "grilled-chicken",
@@ -69,7 +69,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/cheese-pizza.png",
-    "explanation": "Cheese pizza can be a sometimes food because it has helpful ingredients, and it can also have more salt and fat."
+    "explanation": "Pizza can be a sometimes food because it has helpful ingredients, and it can also have more salt and fat."
   },
   {
     "id": "pancakes",
@@ -77,7 +77,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/pancakes.png",
-    "explanation": "Pancakes are a sometimes food, especially with syrup, because they can give quick energy but may not keep you full as long."
+    "explanation": "Pancakes are a sometimes food, especially with syrup.  I mean, it has 'cake' right there in the name."
   },
   {
     "id": "granola-bar",
@@ -85,7 +85,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/granola-bar.png",
-    "explanation": "Granola bars can be a sometimes food because some have oats and nuts, while others have lots of added sugar."
+    "explanation": "Granola bars can be a sometimes food because they might have healthy oats and nuts, but they often have lots of added candy and sugar."
   },
   {
     "id": "fruit-juice",
@@ -93,7 +93,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/fruit-juice.png",
-    "explanation": "Fruit juice can be a sometimes drink because it has fruit flavor, but whole fruit usually has more fiber."
+    "explanation": "Fruit juice can be a sometimes drink because it has all the sugar of a pile of whole fruit, but without the helpful fiber."
   },
   {
     "id": "cupcake",
@@ -142,7 +142,7 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/cauliflower.png",
-    "explanation": "Cauliflower is an everyday food because it gives your body fiber, water, and helpful nutrients."
+    "explanation": "Cauliflower is an everyday food because it gives your body fiber and helpful nutrients."
   },
   {
     "id": "cheese-quesadilla",
@@ -150,7 +150,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/cheese-quesadilla.png",
-    "explanation": "A cheese quesadilla can be a sometimes food because it has protein and calcium, and it can also have more refined grains and fat."
+    "explanation": "A quesadilla can be a sometimes food because it has protein and calcium, and it can also have more refined grains and fat."
   },
   {
     "id": "chex-mix",
@@ -174,7 +174,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/dots-pretzel-sticks.png",
-    "explanation": "Pretzel sticks can be a sometimes snack because they are crunchy and fun, and they can also have more salt than everyday foods."
+    "explanation": "Pretzel sticks can be a sometimes snack because of their processed grains and added salt."
   },
   {
     "id": "honey-bunches",
@@ -182,7 +182,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/honey-bunches.png",
-    "explanation": "Honey Bunches of Oats can be a sometimes food because it has grains, and it can also have added sugar."
+    "explanation": "Most cereals can be considered a sometimes food because they have grains, but they also usually have lots of added sugar."
   },
   {
     "id": "macaroni-and-cheese",
@@ -190,7 +190,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/macaroni-and-cheese.png",
-    "explanation": "Macaroni and cheese can be a sometimes food because it has dairy and energy, and it can also have more salt and fat."
+    "explanation": "Macaroni and cheese is a sometimes food because it has dairy and energy, but it's the salt and fat that makes it tasty."
   },
   {
     "id": "microwave-popcorn",
@@ -198,7 +198,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/microwave-popcorn.png",
-    "explanation": "Microwave popcorn can be a sometimes snack because popcorn is a grain, and some kinds add extra butter, oil, or salt."
+    "explanation": "Microwave popcorn should be a sometimes snack because its fiber content may be overshadowed by its added butter, oil, or salt."
   },
   {
     "id": "plain-noodles",
@@ -214,7 +214,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/sushi.png",
-    "explanation": "Sushi can be a sometimes food because it often has fish and vegetables, and it can also include white rice and salty sauces."
+    "explanation": "Sushi can be a sometimes food because it often has healthy fish and vegetables, but it can also include white rice and salty sauces."
   },
   {
     "id": "sweet-peppers",
@@ -222,7 +222,7 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/sweet-peppers.png",
-    "explanation": "Sweet peppers are an everyday food because they are colorful, crunchy, and full of vitamins."
+    "explanation": "Sweet peppers and other fresh veggies are an everyday food that are colorful, crunchy, and full of vitamins."
   },
   {
     "id": "turkey-sandwich",
@@ -230,7 +230,7 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/turkey-sandwich.png",
-    "explanation": "A turkey sandwich can be an everyday food because it has protein and can be balanced with bread, vegetables, and fruit on the side."
+    "explanation": "A turkey sandwich can be an everyday food with fiber and lean protein, plus calcium and healthy vitamins if you build it right."
   },
   {
     "id": "uncrustables",
@@ -238,7 +238,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/uncrustables.png",
-    "explanation": "Uncrustables can be a sometimes food because they have peanut butter for energy, and they can also have added sugar."
+    "explanation": "Uncrustables should be a sometimes food with lots of added sugar.  A homemade PB&J with whole grain bread and natural peanut butter would be a much healthier everyday option."
   },
   {
     "id": "fruit-smoothie",
@@ -246,7 +246,7 @@
     "category": "slow",
     "categoryLabel": "Slow",
     "image": "/images/foods/fruit smoothie.png",
-    "explanation": "A fruit smoothie can be a sometimes drink because it has fruit, and it can also be easier to drink quickly than whole fruit."
+    "explanation": "A fruit smoothie can be a sometimes drink because it has the vitamins and fiber of whole fruit, in an easier-to-drink form."
   },
   {
     "id": "greek-yogurt-fruit",
