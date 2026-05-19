@@ -91,7 +91,7 @@ function showFood() {
   });
 
   roundCountElement.textContent = `Food ${currentFoodIndex + 1} of ${foods.length}`;
-  questionElement.textContent = "Which kind of food is this?";
+  questionElement.textContent = "Is This a Healthy Food?";
   foodNameElement.textContent = currentFood.name;
   foodImageElement.src = currentFood.image;
   foodImageElement.alt = currentFood.name;

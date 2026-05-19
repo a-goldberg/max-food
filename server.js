@@ -30,7 +30,7 @@ app.get("/", (request, response) => {
   const requestOrigin = getRequestOrigin(request);
 
   response.render("game", {
-    pageTitle: "A Healthy Food Game",
+    pageTitle: "Max's Healthy Food Game",
     pageDescription:
       "A playful food categorization game for learning Whoa, Slow, and Go foods.",
     shareImageUrl: `${requestOrigin}/images/share/barbecue-plate-share.jpg`,

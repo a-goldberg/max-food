@@ -149,6 +149,7 @@ h1 {
   margin: 12px 0 18px;
   font-size: clamp(1.8rem, 5vw, 3rem);
   line-height: 1.12;
+  font-weight: normal;
 }
 
 .food-display {
