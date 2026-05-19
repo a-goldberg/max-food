@@ -33,7 +33,7 @@ app.get("/", (request, response) => {
     pageTitle: "Max's Healthy Food Game",
     pageDescription:
       "A playful food categorization game for learning Whoa, Slow, and Go foods.",
-    shareImageUrl: `${requestOrigin}/images/share/barbecue-plate-share.jpg`,
+    shareImageUrl: `${requestOrigin}/images/share/liger-meat.jpg`,
     pageUrl: requestOrigin,
     versionNumber: getPublicEnvValue("version", "0.0.0"),
   });
