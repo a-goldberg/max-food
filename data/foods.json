@@ -399,5 +399,45 @@
     "categoryLabel": "Slow",
     "image": "/images/foods/bagel-cream-cheese.png",
     "explanation": "A lot depends on how it's prepared, but you can enjoy a bagel with cream cheese as a sometimes food.  That's a lot of calories from refined carbs, though."
+  },
+  {
+    "id": "edamame",
+    "name": "Edamame",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/edamame.png",
+    "explanation": "Edamame is an everyday food because it gives your body protein (in plant form!), fiber, and other helpful nutrients."
+  },
+  {
+    "id": "kale-chips",
+    "name": "Kale Chips",
+    "category": "slow",
+    "categoryLabel": "Slow",
+    "image": "/images/foods/kale-chips.png",
+    "explanation": "Homemade kale chips, when spritzed with olive oil and a little salt, can be a pretty nutritious snack made from leafy greens and healthy fats.  Just don't overdo it."
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/kiwi.png",
+    "explanation": "Kiwi is an everyday food because it has fiber, vitamin C, and other good stuff—especially when you eat the skin."
+  },
+  {
+    "id": "meat-stick",
+    "name": "Meat Stick",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/meat-stick.png",
+    "explanation": "Meat sticks are a once-in-a-while food because processed meats can have more salt and fat than everyday proteins."
+  },
+  {
+    "id": "salami",
+    "name": "Salami",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/salami.png",
+    "explanation": "Holy nitrates, Batman!  Salami is a once-in-a-while food because it is a processed meat that can have more salt and fat."
   }
 ]
