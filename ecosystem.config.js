@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "whoa-food",
       script: "server.js",
-      instances: 1,
+      instances: 2,
       autorestart: true,
       watch: ["server.js", "views", "public", "data"],
       ignore_watch: ["node_modules", ".git"],

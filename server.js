@@ -30,8 +30,9 @@ app.get("/", (request, response) => {
   const requestOrigin = getRequestOrigin(request);
 
   response.render("game", {
-    pageTitle: "Whoa Slow Go",
-    pageDescription: "A playful food categorization game for learning Whoa, Slow, and Go foods.",
+    pageTitle: "A Healthy Food Game",
+    pageDescription:
+      "A playful food categorization game for learning Whoa, Slow, and Go foods.",
     shareImageUrl: `${requestOrigin}/images/share/barbecue-plate-share.jpg`,
     pageUrl: requestOrigin,
     versionNumber: getPublicEnvValue("version", "0.0.0"),

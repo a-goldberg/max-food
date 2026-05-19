@@ -1,6 +1,6 @@
 {
   "name": "whoa-slow-go",
-  "version": "1.0.0",
+  "version": "1.1.4",
   "description": "A small browser-based educational food categorization game.",
   "main": "server.js",
   "scripts": {

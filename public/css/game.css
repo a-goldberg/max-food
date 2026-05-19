@@ -19,9 +19,21 @@ body {
   color: var(--ink);
   font-family: "Comic Sans MS", "Trebuchet MS", system-ui, sans-serif;
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 210, 46, 0.28), transparent 12rem),
-    radial-gradient(circle at 88% 20%, rgba(98, 191, 79, 0.2), transparent 10rem),
-    radial-gradient(circle at 20% 82%, rgba(74, 167, 232, 0.16), transparent 12rem),
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(255, 210, 46, 0.28),
+      transparent 12rem
+    ),
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(98, 191, 79, 0.2),
+      transparent 10rem
+    ),
+    radial-gradient(
+      circle at 20% 82%,
+      rgba(74, 167, 232, 0.16),
+      transparent 12rem
+    ),
     var(--paper);
 }
 
@@ -40,7 +52,9 @@ button {
   z-index: 10;
   margin: 0;
   color: #000000;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    monospace;
   font-size: 0.72rem;
   line-height: 1;
 }
@@ -48,8 +62,10 @@ button {
 .game-shell {
   width: min(1120px, 100%);
   margin: 0 auto;
-  padding: 24px clamp(14px, 4vw, 36px) 32px;
-  transition: filter 180ms ease, transform 180ms ease;
+  padding: 8px clamp(14px, 4vw, 36px) 32px;
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
 }
 
 body.feedback-open .game-shell {
@@ -82,7 +98,7 @@ p {
 
 h1 {
   margin: 0;
-  font-size: clamp(2.1rem, 5vw, 4.2rem);
+  font-size: clamp(2.1rem, 5vw, 3rem);
   line-height: 1;
 }
 
@@ -113,7 +129,7 @@ h1 {
 .game-card {
   position: relative;
   overflow: hidden;
-  padding: clamp(18px, 4vw, 34px);
+  padding: clamp(18px, 4vw, 20px);
   border: 3px solid rgba(154, 130, 85, 0.16);
   border-radius: 24px;
   background: rgba(255, 252, 242, 0.9);
@@ -172,7 +188,10 @@ h1 {
   color: white;
   box-shadow: 0 8px 0 rgba(58, 48, 34, 0.15);
   cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    filter 160ms ease;
 }
 
 .answer-button span {
@@ -260,7 +279,7 @@ h1 {
 
 .feedback h3 {
   margin: 0 0 10px;
-  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-size: clamp(2rem, 6vw, 2.5rem);
 }
 
 .feedback p {
@@ -269,6 +288,7 @@ h1 {
   color: var(--muted);
   font-size: clamp(1.1rem, 3vw, 1.35rem);
   line-height: 1.45;
+  text-align: justify;
 }
 
 .celebration {
