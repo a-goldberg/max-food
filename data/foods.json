@@ -227,10 +227,10 @@
   {
     "id": "turkey-sandwich",
     "name": "Turkey Sandwich",
-    "category": "go",
-    "categoryLabel": "Go",
+    "category": "slow",
+    "categoryLabel": "Slow",
     "image": "/images/foods/turkey-sandwich.png",
-    "explanation": "A turkey sandwich can be an everyday food with fiber and lean protein, plus calcium and healthy vitamins if you build it right.  Shira thinks it's trash, though.  Just don't eat, like, six of them."
+    "explanation": "When made thoughtfully, a turkey sandwich is fine as a sometimes food with fiber and lean protein, plus calcium and healthy vitamins.  Add veggies instead of cheese to make it a Go.  Just don't eat, like, six of them."
   },
   {
     "id": "uncrustables",
