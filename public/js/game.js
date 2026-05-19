@@ -124,7 +124,6 @@ function handleAnswerClick(event) {
       streak,
       reachedNewBestStreak,
     );
-    launchConfetti();
   } else {
     streak = 0;
     hasHandledBestForCurrentStreak = false;
@@ -153,6 +152,8 @@ function closeFeedbackModal() {
 
 function getStreakCelebration(currentStreak, reachedNewBestStreak) {
   if (reachedNewBestStreak) {
+    launchConfetti();
+
     return `New best streak: ${currentStreak} in a row!`;
   }
 
