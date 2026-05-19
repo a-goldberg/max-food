@@ -1,9 +1,3 @@
-User-agent: Googlebot
-Disallow: /
-
-User-agent: Googlebot-Image
-Disallow: /
-
 User-agent: facebookexternalhit
 Allow: /
 
@@ -15,6 +9,12 @@ Allow: /
 
 User-agent: Discordbot
 Allow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
 
 User-agent: *
 Disallow: /
