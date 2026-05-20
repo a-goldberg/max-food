@@ -454,7 +454,7 @@
     "category": "whoa",
     "categoryLabel": "Whoa",
     "image": "/images/foods/webp/key-lime-pie.webp",
-    "explanation": "Key lime pie is a once-in-a-while food like most sugary desserts. Three words: Sweetened Condensed Milk. But boy is it delightful."
+    "explanation": "Three words: Sweetened Condensed Milk. Key lime pie is a once-in-a-while food like most sugary desserts. But boy is it delightful."
   },
   {
     "id": "nutella",
@@ -478,6 +478,6 @@
     "category": "go",
     "categoryLabel": "Go",
     "image": "/images/foods/webp/shrimp-cocktail.webp",
-    "explanation": "Shrimp is air meat. Shrimp cocktail can be an everyday food because shrimp has protein without anything you don't need. Except maybe parasites. Worth the risk, I say."
+    "explanation": "Shrimp is air meat. Shrimp cocktail can be an everyday food because shrimp has protein without anything you don't need (notwithstanding E. coli and lots of cholesterol). Worth the risk, I say."
   }
 ]
