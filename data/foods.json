@@ -4,7 +4,7 @@
     "name": "Soda",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/soda.png",
+    "image": "/images/foods/webp/soda.webp",
     "explanation": "Soda is typically chock full of sugar, offering few if any helpful nutrients.  You don't need it."
   },
   {
@@ -12,7 +12,7 @@
     "name": "Cookie",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/cookie.png",
+    "image": "/images/foods/webp/cookie.webp",
     "explanation": "Cookies are a once-in-a-while treat full of fats and lots of added sugar."
   },
   {
@@ -20,7 +20,7 @@
     "name": "Apple",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/apple.png",
+    "image": "/images/foods/webp/apple.webp",
     "explanation": "Fresh fruits like apples are an everyday food because they give your body fiber, water, and natural sweetness."
   },
   {
@@ -28,7 +28,7 @@
     "name": "Salad",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/salad.png",
+    "image": "/images/foods/webp/salad.webp",
     "explanation": "Green salads are an everyday food with fresh vegetables that give your body fiber, vitamins, and goodness.  Just don't ruin that with a heavy ranch dressing."
   },
   {
@@ -36,7 +36,7 @@
     "name": "Cheeseburger",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/burger.png",
+    "image": "/images/foods/webp/burger.webp",
     "explanation": "Burgers are delicious, but they have more calories, fat, and sodium than you need in your life."
   },
   {
@@ -44,7 +44,7 @@
     "name": "Carrots",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/carrots.png",
+    "image": "/images/foods/webp/carrots.webp",
     "explanation": "Mmmm!  Carrots are an everyday food with crunch, color, and vitamin A to help your body grow strong."
   },
   {
@@ -52,7 +52,7 @@
     "name": "Oatmeal",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/oatmeal.png",
+    "image": "/images/foods/webp/oatmeal.webp",
     "explanation": "Oatmeal is an everyday food with whole grains that can help keep energy steady. Unless you pack it full of butter and sugar, of course."
   },
   {
@@ -60,7 +60,7 @@
     "name": "Grilled Chicken",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/grilled-chicken.png",
+    "image": "/images/foods/webp/grilled-chicken.webp",
     "explanation": "Grilled chicken is an everyday food with lean protein that helps build and repair muscles."
   },
   {
@@ -68,7 +68,7 @@
     "name": "Pizza",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/cheese-pizza.png",
+    "image": "/images/foods/webp/cheese-pizza.webp",
     "explanation": "Pizza can be a sometimes food. With meat toppings, it has all the food groups you need!  If oil and fats and salt and highly processed ingredients are what you need. (Hint:  they're not.)"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Pancakes",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/pancakes.png",
+    "image": "/images/foods/webp/pancakes.webp",
     "explanation": "Pancakes are okay only as a rare treat, especially with syrup.  I mean, it has 'cake' right there in the name."
   },
   {
@@ -84,7 +84,7 @@
     "name": "Granola Bar",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/granola-bar.png",
+    "image": "/images/foods/webp/granola-bar.webp",
     "explanation": "Granola bars can be a sometimes food because they might have healthy oats and nuts, but they often have lots of added candy and sugar."
   },
   {
@@ -92,7 +92,7 @@
     "name": "Fruit Juice",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/fruit-juice.png",
+    "image": "/images/foods/webp/fruit-juice.webp",
     "explanation": "Fruit juice can be a sometimes drink because it has all the sugar of a pile of whole fruits, but without the helpful fiber."
   },
   {
@@ -100,7 +100,7 @@
     "name": "Cupcake",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/cupcake.png",
+    "image": "/images/foods/webp/cupcake.webp",
     "explanation": "Cupcakes are a once-in-a-while food—sweet treats that usually have lots of added sugar."
   },
 
@@ -109,7 +109,7 @@
     "name": "French Fries",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/fries.png",
+    "image": "/images/foods/webp/fries.webp",
     "explanation": "French fries are not vegetables! They're a once-in-a-while snack with more oil and salt than everyday foods."
   },
   {
@@ -117,7 +117,7 @@
     "name": "Candy",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/candy.png",
+    "image": "/images/foods/webp/candy.webp",
     "explanation": "Candy is a once-in-a-while food because it is mostly sugar. Best enjoyed as a small treat."
   },
   {
@@ -125,7 +125,7 @@
     "name": "Artichoke",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/artichoke.png",
+    "image": "/images/foods/webp/artichoke.webp",
     "explanation": "Artichokes are an everyday food with plenty of fiber, vitamins, and minerals.  Avoid drowning them in butter or mayo, though."
   },
   {
@@ -133,7 +133,7 @@
     "name": "Baked Fish",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/baked-fish.png",
+    "image": "/images/foods/webp/baked-fish.webp",
     "explanation": "Fish (when it isn't fried) is an everyday food with protein and healthy fats that help your body and brain."
   },
   {
@@ -141,7 +141,7 @@
     "name": "Cauliflower",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/cauliflower.png",
+    "image": "/images/foods/webp/cauliflower.webp",
     "explanation": "Cauliflower is an everyday food because it gives your body fiber and important nutrients."
   },
   {
@@ -149,7 +149,7 @@
     "name": "Cheese Quesadilla",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/cheese-quesadilla.png",
+    "image": "/images/foods/webp/cheese-quesadilla.webp",
     "explanation": "Ain't nothing healthy about a quesadilla. Protein and calcium, sure, but mostly refined grains and fat."
   },
   {
@@ -157,7 +157,7 @@
     "name": "Chex Mix",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/chex-mix.png",
+    "image": "/images/foods/webp/chex-mix.webp",
     "explanation": "Chex mix is made mostly of Degermed Yellow Corn Meal. Yum! It also contains Barley Malt Syrup, \"Sulfiting Agents,\" and Palm Oil, which is literally the worst."
   },
   {
@@ -165,7 +165,7 @@
     "name": "Chicken Nuggets",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/chicken-nuggets.png",
+    "image": "/images/foods/webp/chicken-nuggets.webp",
     "explanation": "Chicken nuggets are a once-in-a-while food, usually breaded and fried, which add needless oil and salt."
   },
   {
@@ -173,7 +173,7 @@
     "name": "Dot's Pretzel Sticks",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/dots-pretzel-sticks.png",
+    "image": "/images/foods/webp/dots-pretzel-sticks.webp",
     "explanation": "Pretzel sticks can be a sometimes snack because of their processed grains and added salt."
   },
   {
@@ -181,7 +181,7 @@
     "name": "Honey Bunches of Oats",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/honey-bunches.png",
+    "image": "/images/foods/webp/honey-bunches.webp",
     "explanation": "Most cereals can be considered a sometimes food at best, because they have processed grains, but they also usually have lots of added sugar."
   },
   {
@@ -189,7 +189,7 @@
     "name": "Macaroni and Cheese",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/macaroni-and-cheese.png",
+    "image": "/images/foods/webp/macaroni-and-cheese.webp",
     "explanation": "Macaroni and cheese is not ideal.  Don't fall for the promise of \"whole wheat pasta.\"  We all know it's the unhealthy amount of salt and fat that makes it tasty. Also, nothing about the phrase 'powdered cheese product' resembles a healthy meal."
   },
   {
@@ -197,7 +197,7 @@
     "name": "Microwave Popcorn",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/microwave-popcorn.png",
+    "image": "/images/foods/webp/microwave-popcorn.webp",
     "explanation": "Microwave popcorn should be a sometimes snack because its fiber content may be overshadowed by its added butter, oil, or salt.  Try stovetop popcorn with a little olive oil and salt for a healthier everyday option."
   },
   {
@@ -205,7 +205,7 @@
     "name": "Plain Noodles",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/plain-noodles.png",
+    "image": "/images/foods/webp/plain-noodles.webp",
     "explanation": "Plain noodles can be a sometimes food because they give quick energy, but they may not offer much fiber or protein by themselves."
   },
   {
@@ -213,7 +213,7 @@
     "name": "Sushi",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/sushi.png",
+    "image": "/images/foods/webp/sushi.webp",
     "explanation": "Sushi can be a sometimes food because it often has healthy fish and vegetables, but it can also include white rice and oily sauces. Not to mention the delicious mercury content of some fish. Yum!"
   },
   {
@@ -221,7 +221,7 @@
     "name": "Sweet Peppers",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/sweet-peppers.png",
+    "image": "/images/foods/webp/sweet-peppers.webp",
     "explanation": "Sweet peppers and other fresh veggies are an everyday food that are colorful, crunchy, and full of vitamins."
   },
   {
@@ -229,7 +229,7 @@
     "name": "Turkey Sandwich",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/turkey-sandwich.png",
+    "image": "/images/foods/webp/turkey-sandwich.webp",
     "explanation": "When made thoughtfully, a turkey sandwich is fine as a sometimes food with fiber and lean protein, plus calcium and healthy vitamins.  Add veggies instead of cheese to make it a Go.  Just don't eat, like, six of them."
   },
   {
@@ -237,7 +237,7 @@
     "name": "Uncrustables",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/uncrustables.png",
+    "image": "/images/foods/webp/uncrustables.webp",
     "explanation": "If we're honest, no one should be eating Uncrustables. It's just a processsed candy pouch masquerading as a meal. A homemade PB&J with whole grain bread and natural peanut butter would be a much healthier option."
   },
   {
@@ -245,7 +245,7 @@
     "name": "Fruit Smoothie",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/fruit smoothie.png",
+    "image": "/images/foods/webp/fruit smoothie.webp",
     "explanation": "A fruit smoothie can be a sometimes drink because it has the vitamins and fiber of whole fruit, in an easier-to-drink form.  Have you ever tried to drink a banana?\nWith added juice, sugar, or cream, this becomes a once-in-a-while dessert, though."
   },
   {
@@ -253,7 +253,7 @@
     "name": "Greek Yogurt with Fruit",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/greek-yogurt-fruit.png",
+    "image": "/images/foods/webp/greek-yogurt-fruit.webp",
     "explanation": "Greek yogurt with fruit can be an everyday food because it has protein, calcium, and fruit for natural sweetness.  Look out for added sugars!"
   },
   {
@@ -261,7 +261,7 @@
     "name": "Bean and Cheese Taco",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/bean-cheese-taco.png",
+    "image": "/images/foods/webp/bean-cheese-taco.webp",
     "explanation": "A bean and cheese taco can be a sometimes food because it has protein and fiber, but it usually has more salt or fat to make it delicious."
   },
   {
@@ -269,7 +269,7 @@
     "name": "Barbecue Plate",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/delicious-barbecue-plate.png",
+    "image": "/images/foods/webp/delicious-barbecue-plate.webp",
     "explanation": "No. Just no. None of this is good for you. 'Protein and fiber,' you may say.  'Vitamins and minerals.'  Perhaps.  But this plate is also full of salt, fat, and calories that can be too much for your body to handle on a regular basis.  You'll also inevitably eat too much, because it's delicious."
   },
   {
@@ -277,7 +277,7 @@
     "name": "Fresh Berries",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/fresh-berries.png",
+    "image": "/images/foods/webp/fresh-berries.webp",
     "explanation": "Fresh berries are an everyday food because they give your body fiber, vitamins, and natural sweetness.  Consume with abandon."
   },
   {
@@ -285,7 +285,7 @@
     "name": "Fresh Cucumbers",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/fresh-cucumbers.png",
+    "image": "/images/foods/webp/fresh-cucumbers.webp",
     "explanation": "Fresh cucumbers are an everyday food that's full of water and crunchy goodness."
   },
   {
@@ -293,7 +293,7 @@
     "name": "Gatorade",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/gatorade.png",
+    "image": "/images/foods/webp/gatorade.webp",
     "explanation": "It's got electrolytes. It's what plants crave! But the ample sugar content of most sports drinks makes it a once-in-a-while treat."
   },
   {
@@ -301,7 +301,7 @@
     "name": "Grilled Cheese",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/grilled-cheese.png",
+    "image": "/images/foods/webp/grilled-cheese.webp",
     "explanation": "Grilled cheese should seldom be eaten. It's just a bunch of refined grains, salt, and fat. That's why kids like it. But, they should avoid."
   },
   {
@@ -309,7 +309,7 @@
     "name": "Hot Dog",
     "category": "whoa",
     "categoryLabel": "Not Hot Dog",
-    "image": "/images/foods/hot-dog.png",
+    "image": "/images/foods/webp/hot-dog.webp",
     "explanation": "Hot dogs are a once-in-a-while food because processed meats can have more salt and fat than everyday proteins."
   },
   {
@@ -317,7 +317,7 @@
     "name": "Ice Cream Sandwich",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/ice-cream-sandwich.png",
+    "image": "/images/foods/webp/ice-cream-sandwich.webp",
     "explanation": "Ice cream sandwiches are a once-in-a-while food because they are sweet frozen treats with added sugar."
   },
   {
@@ -325,7 +325,7 @@
     "name": "Instant Ramen",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/instant-ramen.png",
+    "image": "/images/foods/webp/instant-ramen.webp",
     "explanation": "Instant ramen is a once-in-a-while food because it can have a lot of salt and may not include many vegetables or protein by itself."
   },
   {
@@ -333,7 +333,7 @@
     "name": "Mozzarella Sticks",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/mozzarella-sticks.png",
+    "image": "/images/foods/webp/mozzarella-sticks.webp",
     "explanation": "Have you or a loved one experienced cheese loss? Unfortunately, mozzarella sticks are a once-in-a-while food because they are usually breaded and fried, which can add more oil and salt.  "
   },
   {
@@ -341,7 +341,7 @@
     "name": "Pickles",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/pickles.png",
+    "image": "/images/foods/webp/pickles.webp",
     "explanation": "Pickles can be a sometimes food because they start as cucumbers, and they can also have more salt than you need."
   },
   {
@@ -349,7 +349,7 @@
     "name": "Roasted Chicken",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/roast-chicken.png",
+    "image": "/images/foods/webp/roast-chicken.webp",
     "explanation": "Roasted chicken can be an everyday food because it gives your body protein that helps build and repair muscles."
   },
   {
@@ -357,7 +357,7 @@
     "name": "Veggie Straws",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/veggie-straws.png",
+    "image": "/images/foods/webp/veggie-straws.webp",
     "explanation": "Veggie Straws can be a sometimes snack because they are crunchy and fun, but they are more like chips than whole vegetables, despite what moms everywhere seem to believe."
   },
   {
@@ -365,7 +365,7 @@
     "name": "Water",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/water.png",
+    "image": "/images/foods/webp/water.webp",
     "explanation": "Ha, it's water.  Drink as much as you want."
   },
   {
@@ -373,7 +373,7 @@
     "name": "White Rice",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/white-rice.png",
+    "image": "/images/foods/webp/white-rice.webp",
     "explanation": "White rice can be a sometimes food because it gives quick energy, but it should be balanced with protein and vegetables."
   },
   {
@@ -381,7 +381,7 @@
     "name": "Roast Liger Meat",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/roast-liger-meat.png",
+    "image": "/images/foods/webp/roast-liger-meat.webp",
     "explanation": "Enjoy liger meat in moderation, because it gives your body protein that helps build and repair muscles, but...it's from a liger."
   },
   {
@@ -389,7 +389,7 @@
     "name": "Grilled Steak",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/grilled-steak.png",
+    "image": "/images/foods/webp/grilled-steak.webp",
     "explanation": "A good steak has protein and iron, but it can also have more saturated fat than other protein sources."
   },
   {
@@ -397,7 +397,7 @@
     "name": "Bagel with Cream Cheese",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/bagel-cream-cheese.png",
+    "image": "/images/foods/webp/bagel-cream-cheese.webp",
     "explanation": "A lot depends on how it's prepared, but you can enjoy a bagel with cream cheese as a sometimes food.  That's a lot of calories from refined carbs, though."
   },
   {
@@ -405,7 +405,7 @@
     "name": "Edamame",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/edamame.png",
+    "image": "/images/foods/webp/edamame.webp",
     "explanation": "Edamame is an everyday food because it gives your body protein (in plant form!), fiber, and other helpful nutrients."
   },
   {
@@ -413,7 +413,7 @@
     "name": "Kale Chips",
     "category": "slow",
     "categoryLabel": "Slow",
-    "image": "/images/foods/kale-chips.png",
+    "image": "/images/foods/webp/kale-chips.webp",
     "explanation": "Homemade kale chips, when spritzed with olive oil and a little salt, can be a pretty nutritious snack made from leafy greens and healthy fats.  Just don't overdo it."
   },
   {
@@ -421,7 +421,7 @@
     "name": "Kiwi",
     "category": "go",
     "categoryLabel": "Go",
-    "image": "/images/foods/kiwi.png",
+    "image": "/images/foods/webp/kiwi.webp",
     "explanation": "Kiwi is an everyday food because it has fiber, vitamin C, and other good stuff—especially when you eat the skin."
   },
   {
@@ -429,7 +429,7 @@
     "name": "Meat Stick",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/meat-stick.png",
+    "image": "/images/foods/webp/meat-stick.webp",
     "explanation": "Meat sticks are a once-in-a-while food because processed meats can have more salt and fat than everyday proteins."
   },
   {
@@ -437,7 +437,47 @@
     "name": "Salami",
     "category": "whoa",
     "categoryLabel": "Whoa",
-    "image": "/images/foods/salami.png",
+    "image": "/images/foods/webp/salami.webp",
     "explanation": "Holy nitrates, Batman!  Salami is a once-in-a-while food because it is a processed meat that can have more salt and fat."
+  },
+  {
+    "id": "broccoli",
+    "name": "Broccoli",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/webp/broccoli.webp",
+    "explanation": "Broccoli is an everyday food, of course. It gives your body fiber, vitamins, stinky toots."
+  },
+  {
+    "id": "key-lime-pie",
+    "name": "Key Lime Pie",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/webp/key-lime-pie.webp",
+    "explanation": "Key lime pie is a once-in-a-while food like most sugary desserts. Three words: Sweetened Condensed Milk. But boy is it delightful."
+  },
+  {
+    "id": "nutella",
+    "name": "Nutella",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/webp/nutella.webp",
+    "explanation": "Don't buy Nutella. Or anything else with palm oil. Like chex mix. It's not good for you, either, by the way."
+  },
+  {
+    "id": "sausage-kolache",
+    "name": "Sausage Kolaches",
+    "category": "whoa",
+    "categoryLabel": "Whoa",
+    "image": "/images/foods/webp/sausage-kolache.webp",
+    "explanation": "A sausage kolache (or klobasnek) is a once-in-a-while food that combines processed meat with refined-grain bread. Not ideal. A seldom treat."
+  },
+  {
+    "id": "shrimp-cocktail",
+    "name": "Shrimp Cocktail",
+    "category": "go",
+    "categoryLabel": "Go",
+    "image": "/images/foods/webp/shrimp-cocktail.webp",
+    "explanation": "Shrimp is air meat. Shrimp cocktail can be an everyday food because shrimp has protein without anything you don't need. Except maybe parasites. Worth the risk, I say."
   }
 ]
