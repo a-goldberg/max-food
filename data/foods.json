@@ -411,8 +411,8 @@
   {
     "id": "kale-chips",
     "name": "Kale Chips",
-    "category": "slow",
-    "categoryLabel": "Slow",
+    "category": "Go",
+    "categoryLabel": "Go",
     "image": "/images/foods/webp/kale-chips.webp",
     "explanation": "Homemade kale chips, when spritzed with olive oil and a little salt, can be a pretty nutritious snack made from leafy greens and healthy fats.  Just don't overdo it."
   },
