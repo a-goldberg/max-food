@@ -37,6 +37,9 @@
     <title><%= pageTitle %></title>
     <link rel="stylesheet" href="/css/game.css" />
     <script defer src="/vendor/canvas-confetti/confetti.browser.js"></script>
+    <script>
+      window.WHOA_FOOD_CONFIG = <%- gameConfigJson %>;
+    </script>
     <script defer src="/js/game.js"></script>
   </head>
   <body>
@@ -59,7 +62,7 @@
             <span>Streak: <strong id="streak">0</strong></span>
           </div>
           <div class="score-pill">
-            <span>Best: <strong id="best-score">0</strong></span>
+            <span>Best: <strong id="best-streak">0</strong></span>
           </div>
         </section>
       </header>
@@ -99,7 +102,7 @@
         >
           <h2>Nice sorting!</h2>
           <p id="final-score"></p>
-          <p id="best-score-note"></p>
+          <p id="best-streak-note"></p>
           <button class="next-button" id="play-again-button" type="button">
             Play Again
           </button>

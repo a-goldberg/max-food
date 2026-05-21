@@ -1,15 +1,16 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const appConfig = require("./config/app");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || appConfig.defaultPort;
 
 // Keep important folders in named variables so the paths are easy to follow.
 const publicFolder = path.join(__dirname, "public");
 const viewsFolder = path.join(__dirname, "views");
 const foodsFile = path.join(__dirname, "data", "foods.json");
-const publicEnvFile = path.join(__dirname, ".env-public");
+const publicEnvFile = path.join(__dirname, appConfig.publicEnvFile);
 
 app.set("view engine", "ejs");
 app.set("views", viewsFolder);
@@ -28,13 +29,17 @@ app.use(
 
 app.get("/", (request, response) => {
   const requestOrigin = getRequestOrigin(request);
+  const gameConfig = {
+    pointsForCorrectAnswer: appConfig.pointsForCorrectAnswer,
+    bestStreakStorageKey: appConfig.bestStreakStorageKey,
+  };
 
   response.render("game", {
-    pageTitle: "Max's Healthy Food Game",
-    pageDescription:
-      "A playful food categorization game for learning Whoa, Slow, and Go foods.",
-    shareImageUrl: `${requestOrigin}/images/share/liger-meat.jpg`,
+    pageTitle: appConfig.pageTitle,
+    pageDescription: appConfig.pageDescription,
+    shareImageUrl: `${requestOrigin}${appConfig.shareImagePath}`,
     pageUrl: requestOrigin,
+    gameConfigJson: serializeForInlineScript(gameConfig),
     versionNumber: getPublicEnvValue("version", "0.0.0"),
   });
 });
@@ -55,9 +60,38 @@ app.get("/api/foods", (request, response, next) => {
   });
 });
 
-app.listen(PORT, "127.0.0.1", () => {
+app.use((request, response) => {
+  if (wantsJson(request)) {
+    response.status(404).json({ error: "Not found" });
+    return;
+  }
+
+  sendErrorPage(response, 404, "Page Not Found", "That page is not part of this game.");
+});
+
+app.use((error, request, response, next) => {
+  console.error(error);
+
+  if (wantsJson(request)) {
+    response.status(500).json({ error: "Something went wrong." });
+    return;
+  }
+
+  sendErrorPage(
+    response,
+    500,
+    "Something Went Wrong",
+    "The game hit a server problem. Please refresh the page and try again.",
+  );
+});
+
+app.listen(PORT, appConfig.bindHost, () => {
   console.log(`Whoa Slow Go is running at http://localhost:${PORT}`);
 });
+
+function serializeForInlineScript(value) {
+  return JSON.stringify(value).replace(/</g, "\\u003c");
+}
 
 function getPublicEnvValue(key, fallbackValue) {
   try {
@@ -75,6 +109,29 @@ function getRequestOrigin(request) {
   const protocol = forwardedProtocol || request.protocol;
 
   return `${protocol}://${request.get("host")}`;
+}
+
+function wantsJson(request) {
+  return request.path.startsWith("/api/") || request.accepts(["html", "json"]) === "json";
+}
+
+function sendErrorPage(response, statusCode, title, message) {
+  response.status(statusCode).send(`<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>${title}</title>
+  </head>
+  <body>
+    <main style="max-width: 42rem; margin: 4rem auto; padding: 1rem; font-family: system-ui, sans-serif;">
+      <h1>${title}</h1>
+      <p>${message}</p>
+      <p><a href="/">Back to the game</a></p>
+    </main>
+  </body>
+</html>`);
 }
 
 function parsePublicEnv(fileContents) {
