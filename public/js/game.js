@@ -3,7 +3,7 @@
 
 const scoreElement = document.querySelector("#score");
 const streakElement = document.querySelector("#streak");
-const bestStreakElement = document.querySelector("#best-score");
+const bestStreakElement = document.querySelector("#best-streak");
 const roundCountElement = document.querySelector("#round-count");
 const questionElement = document.querySelector("#question");
 const foodImageElement = document.querySelector("#food-image");
@@ -20,11 +20,12 @@ const celebrationElement = document.querySelector("#celebration");
 const nextButton = document.querySelector("#next-button");
 const finalScreenElement = document.querySelector("#final-screen");
 const finalScoreElement = document.querySelector("#final-score");
-const bestStreakNoteElement = document.querySelector("#best-score-note");
+const bestStreakNoteElement = document.querySelector("#best-streak-note");
 const playAgainButton = document.querySelector("#play-again-button");
+const gameConfig = window.WHOA_FOOD_CONFIG || {};
 
-const POINTS_FOR_CORRECT_ANSWER = 10;
-const BEST_STREAK_KEY = "whoaSlowGoBestStreak";
+const POINTS_FOR_CORRECT_ANSWER = gameConfig.pointsForCorrectAnswer || 10;
+const BEST_STREAK_KEY = gameConfig.bestStreakStorageKey || "whoaSlowGoBestStreak";
 
 let foods = [];
 let currentFoodIndex = 0;
