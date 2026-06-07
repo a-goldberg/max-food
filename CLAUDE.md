@@ -4,7 +4,7 @@ Concise project context for future AI/code sessions.
 
 ## Project
 
-Small Node/Express/EJS browser game. No React, TypeScript, Tailwind, database, auth, or build system.
+Small Node/Express/EJS browser game. No React, TypeScript, Tailwind, auth, or build system.
 
 App/game identity:
 
@@ -17,12 +17,16 @@ App/game identity:
 
 - `server.js`: Express app, static serving, `/api/foods`, EJS render, simple 404/500 handlers.
 - `config/app.js`: centralized app constants. Use this for high-level values instead of scattering literals.
+- `lib/database.js`: SQLite bootstrap, completed-game inserts, leaderboard queries.
+- `lib/scoring.js`: shared score calculation and public game config helpers.
 - `.env-public`: checked-in public release values. Currently used for `version`.
 - `views/game.ejs`: main page template, metadata, score UI, answer buttons, feedback modal.
 - `public/js/game.js`: all browser game state and interaction logic.
 - `public/css/game.css`: single stylesheet, organized by section comments.
 - `data/foods.json`: source of truth for food items.
+- `data/game.sqlite`: default local SQLite DB path, ignored by git.
 - `scripts/validate-foods.js`: food data validator.
+- `scripts/verify-scoring.js`: lightweight scoring math checks.
 - `data/README.md`: food data conventions.
 - `ecosystem.config.js`: PM2 config.
 
@@ -78,11 +82,15 @@ Current share image configured in `config/app.js`.
 `public/js/game.js`:
 
 - Fetches `/api/foods`
+- Shows a start modal for player name, location, and difficulty
 - Shuffles food order
 - Shows one food at a time
 - Compares selected `data-category` to food `category`
-- Correct answer adds `pointsForCorrectAnswer` from `config/app.js`
+- Practice mode has no timer; Normal has 6 seconds; Hard has 3 seconds
+- Timeout records a `timeout` answer, counts as incorrect, and resets streak
+- Correct answers use shared v2 scoring rules from `config/app.js`
 - Tracks current score, current streak, and persistent best streak in `localStorage`
+- Sends completed games to `/api/scores` and shows `/api/leaderboard` results
 - Best streak storage key comes from `config/app.js`
 - Confetti only fires when a new best streak is first exceeded in the current streak, excluding initial best of 0
 - Feedback appears in modal overlay
@@ -94,8 +102,25 @@ DOM ids after cleanup:
 - `#streak`
 - `#best-streak`
 - `#best-streak-note`
+- `#timer`
+- `#start-screen`
+- `#leaderboard`
 
 Avoid reintroducing `best-score` naming.
+
+## Scoring / SQLite
+
+Scoring settings live in `config/app.js`:
+
+- Base correct answer: 10 points
+- Practice multiplier: 1.0, no timer
+- Normal multiplier: 1.2, 6-second timer
+- Hard multiplier: 1.5, 3-second timer
+- Timed score formula: `base + bonus * timeRemainingRatio`, rounded to nearest whole point
+
+Server-side score saving recalculates scores from raw answer rows. Do not trust the browser total as the stored source of truth.
+
+SQLite uses Node's built-in `node:sqlite`, so production should run Node 22 or newer. Default DB path is `data/game.sqlite`; override with `WHOA_FOOD_DB_PATH`. Back up the `.sqlite` file and any active `-wal` / `-shm` files.
 
 ## Server / Routing
 
@@ -105,6 +130,8 @@ Avoid reintroducing `best-score` naming.
 - Serves canvas-confetti package from `/vendor/canvas-confetti`
 - Renders `/`
 - Serves food data at `/api/foods`
+- Saves completed games at `POST /api/scores`
+- Reads top scores at `GET /api/leaderboard?difficulty=all|practice|normal|hard&limit=10`
 - Has basic 404/500 responses
 
 Metadata/OG URLs are built from request origin plus config paths. If deployed behind OpenLiteSpeed, make sure forwarded proto/host are correct.
@@ -129,6 +156,7 @@ Remote deploy reminder:
 ```bash
 npm install
 npm run validate:data
+npm run verify:scoring
 pm2 restart whoa-food
 ```
 
