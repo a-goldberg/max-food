@@ -30,6 +30,9 @@ const leaderboardElement = document.querySelector("#leaderboard");
 const leaderboardListElement = document.querySelector("#leaderboard-list");
 const startScreenElement = document.querySelector("#start-screen");
 const startFormElement = document.querySelector("#start-form");
+const startLeaderboardPanelElement = document.querySelector(
+  "#start-leaderboard-panel",
+);
 const playerNameElement = document.querySelector("#player-name");
 const playerLocationElement = document.querySelector("#player-location");
 const startErrorElement = document.querySelector("#start-error");
@@ -38,6 +41,10 @@ const startLeaderboardElement = document.querySelector("#start-leaderboard");
 const startLeaderboardListElement = document.querySelector(
   "#start-leaderboard-list",
 );
+const startLeaderboardStatusElement = document.querySelector(
+  "#start-leaderboard-status",
+);
+const backToStartButton = document.querySelector("#back-to-start-button");
 const gameConfig = window.WHOA_FOOD_CONFIG || {};
 
 const BEST_STREAK_KEY = gameConfig.bestStreakStorageKey || "whoaSlowGoBestStreak";
@@ -89,6 +96,9 @@ function showStartScreen() {
   clearTimer();
   closeFeedbackModal();
   quitGameButton.classList.add("hidden");
+  startFormElement.classList.remove("hidden");
+  startLeaderboardPanelElement.classList.add("hidden");
+  startLeaderboardStatusElement.textContent = "";
   startScreenElement.classList.remove("hidden");
   document.body.classList.add("start-open");
   playerNameElement.focus();
@@ -478,7 +488,11 @@ async function loadLeaderboard(leaderboardContainer, leaderboardList) {
   }
 
   const leaderboard = await response.json();
-  renderLeaderboard(leaderboard.scores || [], leaderboardContainer, leaderboardList);
+  return renderLeaderboard(
+    leaderboard.scores || [],
+    leaderboardContainer,
+    leaderboardList,
+  );
 }
 
 function renderLeaderboard(scores, leaderboardContainer, leaderboardList) {
@@ -486,7 +500,7 @@ function renderLeaderboard(scores, leaderboardContainer, leaderboardList) {
 
   if (scores.length === 0) {
     leaderboardContainer.classList.add("hidden");
-    return;
+    return false;
   }
 
   scores.forEach((entry) => {
@@ -508,18 +522,36 @@ function renderLeaderboard(scores, leaderboardContainer, leaderboardList) {
   });
 
   leaderboardContainer.classList.remove("hidden");
+  return true;
 }
 
 async function showStartLeaderboard() {
-  startErrorElement.textContent = "Loading leaderboard...";
+  startErrorElement.textContent = "";
+  startFormElement.classList.add("hidden");
+  startLeaderboardPanelElement.classList.remove("hidden");
+  startLeaderboardStatusElement.textContent = "Loading leaderboard...";
 
   try {
-    await loadLeaderboard(startLeaderboardElement, startLeaderboardListElement);
-    startErrorElement.textContent = "";
+    const hasScores = await loadLeaderboard(
+      startLeaderboardElement,
+      startLeaderboardListElement,
+    );
+    startLeaderboardStatusElement.textContent = hasScores
+      ? ""
+      : "No scores yet. You can be the first.";
+    backToStartButton.focus();
   } catch (error) {
-    startErrorElement.textContent = "The leaderboard could not be loaded.";
+    startLeaderboardStatusElement.textContent =
+      "The leaderboard could not be loaded.";
     console.error(error);
   }
+}
+
+function showStartFormPanel() {
+  startLeaderboardPanelElement.classList.add("hidden");
+  startFormElement.classList.remove("hidden");
+  startLeaderboardStatusElement.textContent = "";
+  playerNameElement.focus();
 }
 
 function playAgain() {
@@ -598,6 +630,7 @@ nextButton.addEventListener("click", goToNextFood);
 playAgainButton.addEventListener("click", playAgain);
 startFormElement.addEventListener("submit", handleStartSubmit);
 startLeaderboardButton.addEventListener("click", showStartLeaderboard);
+backToStartButton.addEventListener("click", showStartFormPanel);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !feedbackElement.classList.contains("hidden")) {

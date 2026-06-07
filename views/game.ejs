@@ -203,11 +203,31 @@
           </button>
         </div>
 
-        <section class="leaderboard start-leaderboard hidden" id="start-leaderboard">
-          <h3>Leaderboard</h3>
+      </form>
+
+      <section
+        class="start-dialog start-leaderboard-panel hidden"
+        id="start-leaderboard-panel"
+        aria-labelledby="start-leaderboard-title"
+      >
+        <p class="eyebrow">MAX PRESENTS:</p>
+        <h2 id="start-leaderboard-title">Leaderboard</h2>
+
+        <section class="leaderboard start-leaderboard" id="start-leaderboard">
+          <h3>Top Scores</h3>
           <ol id="start-leaderboard-list"></ol>
         </section>
-      </form>
+
+        <p class="form-error" id="start-leaderboard-status" aria-live="polite"></p>
+
+        <button
+          class="secondary-button"
+          id="back-to-start-button"
+          type="button"
+        >
+          Back
+        </button>
+      </section>
     </section>
 
     <section

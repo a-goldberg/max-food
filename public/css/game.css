@@ -372,7 +372,7 @@ h1 {
 
 .start-dialog h2 {
   margin: 6px 0 20px;
-  font-size: clamp(2rem, 7vw, 3rem);
+  font-size: clamp(2rem, 7vw, 2.5rem);
   line-height: 1;
 }
 
@@ -494,6 +494,11 @@ h1 {
 
 .start-leaderboard {
   max-width: none;
+}
+
+.start-leaderboard-panel .secondary-button {
+  width: 100%;
+  margin-top: 18px;
 }
 
 /* Feedback Modal */
