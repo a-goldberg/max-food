@@ -10,7 +10,7 @@ const appConfig = {
   shareImagePath: "/images/share/liger-meat.jpg",
 
   databasePathEnvVar: "WHOA_FOOD_DB_PATH",
-  defaultDatabasePath: "data/game.sqlite",
+  defaultDatabasePath: "../data/game.sqlite",
 
   bestStreakStorageKey: "whoaSlowGoBestStreak",
   scoringConfigVersion: "v2-2026-06",
