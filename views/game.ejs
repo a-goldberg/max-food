@@ -64,6 +64,9 @@
           <div class="score-pill">
             <span>Best: <strong id="best-streak">0</strong></span>
           </div>
+          <div class="score-pill timer-pill hidden" id="timer-pill">
+            <span>Time: <strong id="timer">--</strong></span>
+          </div>
         </section>
       </header>
 
@@ -79,6 +82,14 @@
         <p class="helper-text" id="helper-text">
           Think carefully, then choose!
         </p>
+
+        <button
+          class="quit-button hidden"
+          id="quit-game-button"
+          type="button"
+        >
+          Quit
+        </button>
 
         <div class="answer-grid" id="answer-grid" aria-label="Answer choices">
           <button class="answer-button whoa" type="button" data-category="whoa">
@@ -103,12 +114,101 @@
           <h2>Nice sorting!</h2>
           <p id="final-score"></p>
           <p id="best-streak-note"></p>
+          <p class="save-status" id="save-status"></p>
+
+          <section class="leaderboard hidden" id="leaderboard">
+            <h3>Leaderboard</h3>
+            <ol id="leaderboard-list"></ol>
+          </section>
+
           <button class="next-button" id="play-again-button" type="button">
             Play Again
           </button>
         </section>
       </section>
     </main>
+
+    <section
+      class="start-screen hidden"
+      id="start-screen"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="start-title"
+    >
+      <form class="start-dialog" id="start-form">
+        <p class="eyebrow">MAX PRESENTS:</p>
+        <h2 id="start-title">A Healthy Food Game</h2>
+
+        <label class="field-label" for="player-name">
+          Name
+          <input
+            id="player-name"
+            name="playerName"
+            type="text"
+            maxlength="<%= playerNameMaxLength %>"
+            autocomplete="nickname"
+            placeholder="Bingo"
+            required
+          />
+        </label>
+
+        <label class="field-label" for="player-location">
+          Location
+          <input
+            id="player-location"
+            name="playerLocation"
+            type="text"
+            maxlength="<%= playerLocationMaxLength %>"
+            autocomplete="address-level2"
+            placeholder="Ding Dong, TX"
+          />
+        </label>
+
+        <fieldset class="difficulty-field">
+          <legend>Difficulty</legend>
+          <label title="No timer. Correct answers are worth 10 points.">
+            <input type="radio" name="difficulty" value="practice" />
+            <span>Practice</span>
+          </label>
+          <label
+            title="6 second timer. Fast correct answers can score up to 12 points."
+          >
+            <input type="radio" name="difficulty" value="normal" checked />
+            <span>Normal</span>
+          </label>
+          <label
+            title="3 second timer. Fast correct answers can score up to 15 points."
+          >
+            <input type="radio" name="difficulty" value="hard" />
+            <span>Hard</span>
+          </label>
+        </fieldset>
+
+        <p class="update-note">
+          New update! Your score is now calculated, in part, by how quickly you
+          select the correct answer. Think fast! Then check your position on
+          the leaderboard after you play.
+        </p>
+
+        <p class="form-error" id="start-error" aria-live="polite"></p>
+
+        <div class="start-actions">
+          <button class="next-button" type="submit">Start Game</button>
+          <button
+            class="secondary-button"
+            id="start-leaderboard-button"
+            type="button"
+          >
+            View Leaderboard
+          </button>
+        </div>
+
+        <section class="leaderboard start-leaderboard hidden" id="start-leaderboard">
+          <h3>Leaderboard</h3>
+          <ol id="start-leaderboard-list"></ol>
+        </section>
+      </form>
+    </section>
 
     <section
       class="feedback hidden"

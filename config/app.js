@@ -9,8 +9,35 @@ const appConfig = {
     "A playful food categorization game for learning Whoa, Slow, and Go foods.",
   shareImagePath: "/images/share/liger-meat.jpg",
 
-  pointsForCorrectAnswer: 10,
+  databasePathEnvVar: "WHOA_FOOD_DB_PATH",
+  defaultDatabasePath: "data/game.sqlite",
+
   bestStreakStorageKey: "whoaSlowGoBestStreak",
+  scoringConfigVersion: "v2-2026-06",
+  scoring: {
+    basePoints: 10,
+    difficulties: {
+      practice: {
+        label: "Practice",
+        timerSeconds: null,
+        multiplier: 1,
+      },
+      normal: {
+        label: "Normal",
+        timerSeconds: 6,
+        multiplier: 1.2,
+      },
+      hard: {
+        label: "Hard",
+        timerSeconds: 3,
+        multiplier: 1.5,
+      },
+    },
+  },
+  playerNameMaxLength: 8,
+  playerLocationMaxLength: 32,
+  leaderboardDefaultLimit: 10,
+  leaderboardMaxLimit: 25,
 
   validCategories: {
     whoa: "Whoa",

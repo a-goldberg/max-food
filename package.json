@@ -7,6 +7,7 @@
     "start": "npm run validate:data && node server.js",
     "dev": "npm run validate:data && nodemon --legacy-watch --watch server.js --watch views --watch public --watch data --ignore node_modules server.js",
     "validate:data": "node scripts/validate-foods.js",
+    "verify:scoring": "node scripts/verify-scoring.js",
     "pm2:start": "npm run validate:data && pm2 start ecosystem.config.js",
     "pm2:stop": "pm2 stop whoa-food",
     "pm2:restart": "npm run validate:data && pm2 restart whoa-food",
