@@ -1,8 +1,0 @@
-node_modules/
-.pm2/
-.DS_Store
-npm-debug.log*
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
-ignored/

@@ -24,7 +24,7 @@ App/game identity:
 - `public/js/game.js`: all browser game state and interaction logic.
 - `public/css/game.css`: single stylesheet, organized by section comments.
 - `data/foods.json`: source of truth for food items.
-- `data/game.sqlite`: default local SQLite DB path, ignored by git.
+- `../data/game.sqlite`: default local SQLite DB path, ignored by git.
 - `scripts/validate-foods.js`: food data validator.
 - `scripts/verify-scoring.js`: lightweight scoring math checks.
 - `data/README.md`: food data conventions.
