@@ -1,0 +1,10 @@
+app/node_modules/
+app/.pm2/
+app/.DS_Store
+app/npm-debug.log*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+app/ignored/
+.DS_Store
+data/
